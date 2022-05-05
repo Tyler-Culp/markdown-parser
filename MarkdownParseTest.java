@@ -11,13 +11,13 @@ public class MarkdownParseTest {
         assertEquals(2, 1+1);
     }
 
-    @Test
-    public void MarkdownParseTest() throws IOException{
-        ArrayList<String> expected = new ArrayList<>(List.of("https://something.com", "some-thing.html"));
-        MarkdownParse mp = new MarkdownParse();
-        ArrayList<String> resultArray = mp.getLinks(Files.readString(Path.of("test-file.md")));
-        assertEquals(expected, resultArray);
-    }
+    // @Test
+    // public void MarkdownParseTest() throws IOException{
+    //     ArrayList<String> expected = new ArrayList<>(List.of("https://something.com", "some-thing.html"));
+    //     MarkdownParse mp = new MarkdownParse();
+    //     ArrayList<String> resultArray = mp.getLinks(Files.readString(Path.of("test-file.md")));
+    //     assertEquals(expected, resultArray);
+    // }
 
     @Test
     public void MarkdownParseTest2() throws IOException{
